@@ -38,11 +38,11 @@
           title: 'Point'
         },
         series: {
-          0: {
+          1: {
             lineWidth: 5,
             lineDashStyle: [2, 1, 2]
           },
-          1: {
+          0: {
             //lineWidth: 5,
             //lineDashStyle: [2, 1, 2], 
             type: 'line',
