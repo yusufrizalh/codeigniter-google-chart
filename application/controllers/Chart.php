@@ -13,6 +13,7 @@ class Chart extends CI_Controller {
 
     public function getdata() {
         $data = $this->chart_model->get_all_data();
+        
         // ubah data jadi format json 
         $response->cols[] = array(
             'id' => '', 
