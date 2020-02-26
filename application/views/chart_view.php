@@ -28,11 +28,29 @@
         height: 600, 
         curveType: 'function', // linechart 
         bar: {groupWidth: "55%"},   // barchart
+        seriesType: 'bars',
         legend: { position: "right" },
-        colors: ['blue'],
+        colors: ['#097138', 'red'],
+        hAxis: {
+          title: 'Month'
+        },
+        vAxis: {
+          title: 'Point'
+        },
+        series: {
+          0: {
+            lineWidth: 5,
+            lineDashStyle: [2, 1, 2]
+          },
+          1: {
+            //lineWidth: 5,
+            //lineDashStyle: [2, 1, 2], 
+            type: 'line',
+          },
+        }
       }; 
  
-      var chart = new google.visualization.LineChart(document.getElementById("chart_div")); 
+      var chart = new google.visualization.ComboChart(document.getElementById("chart_div")); 
       chart.draw(data, options); 
     } 
  

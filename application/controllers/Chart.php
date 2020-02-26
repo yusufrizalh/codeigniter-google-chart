@@ -23,7 +23,13 @@ class Chart extends CI_Controller {
         );
         $response->cols[] = array(
             'id' => '', 
-            'label' => 'Point', 
+            'label' => 'Point1', 
+            'pattern' => '', 
+            'type' => 'number'
+        );
+        $response->cols[] = array(
+            'id' => '', 
+            'label' => 'Point2', 
             'pattern' => '', 
             'type' => 'number'
         );
@@ -36,6 +42,10 @@ class Chart extends CI_Controller {
                 ), 
                 array(
                     'v' => (int)$tampil->revenue_point, 
+                    'f' => null
+                ), 
+                array(
+                    'v' => (int)$tampil->revenue_point_2, 
                     'f' => null
                 )
             );
